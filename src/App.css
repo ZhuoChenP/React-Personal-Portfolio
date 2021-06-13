@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+
+.AboutMeContentColor{  color:#b4d2ff;}
+.font{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.icon{
+  color:#768CA4;
+}
+.icon:hover{
+  color: #5D739D;
+  transform: rotate(15deg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#Cardbottom{
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.cardCustomize{
+    margin: 1rem;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
+    border-radius: .6rem;
+    border: 3px solid;
+    border-color: #EF9A4B;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    align-content: space-between;
+    color: #EF9A4B;
+    background-color: #2E3440;
 }
