@@ -3,7 +3,9 @@ import { Media, Container,Nav } from "react-bootstrap";
 import { GoMarkGithub, GoFile, GoMail } from "react-icons/go";
 import {IconContext} from "react-icons";
 import '../App.css';
+
 function AboutMe() {
+
   return (
     <Container style={{ paddingTop: "150px" }}>
       <IconContext.Provider value={{ size: "35" }}>

@@ -18,8 +18,6 @@
 
 .cardCustomize{
     margin: 1rem;
-
- 
     border-radius: .6rem;
     border: 3px solid;
     border-color: #EF9A4B;
@@ -29,4 +27,10 @@
     align-content: space-between;
     color: #EF9A4B;
     background-color: #2E3440;
+}
+
+.searchBar{
+    float: right;
+    display: flex;
+    
 }

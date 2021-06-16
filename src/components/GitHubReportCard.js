@@ -1,33 +1,39 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { RiGitRepositoryFill } from "react-icons/ri";
-import { BiGitRepoForked, BiStar, BiCircle } from "react-icons/bi";
+import { RiGitRepositoryFill, RiCheckboxBlankCircleFill } from "react-icons/ri";
+import { BiGitRepoForked, BiStar } from "react-icons/bi";
 import "../App.css";
-export const GitHubReportCard = () => {
+
+export const GitHubReportCard = (props) => {
+  const LanguageColors = require("language-colors");
+  var debug = null;
+  if (props.language == null) debug = "CSS";
+  else debug = props.language;
   return (
-    <div>
-      <div className="col-sm-9">
-        <Card style={{ width: "23rem"}} className="cardCustomize">
+    <div className="col-sm-6">
+
+        <Card style={{ width: "23rem" }} className="cardCustomize">
           <Card.Body>
             <Card.Title>
               <RiGitRepositoryFill />
-              Card Title
+              <a href={props.url} style={{ color: "dark" }}>
+                {props.name}
+              </a>
             </Card.Title>
-            <Card.Text className="font">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
+            <Card.Text className="font">{props.description}</Card.Text>
             <div>
-              <BiCircle /> <span>python </span>
+              <RiCheckboxBlankCircleFill
+                style={{ color: LanguageColors[debug.toLowerCase()] }}
+              />
+              <span>{debug} </span>
               <BiStar />
-              <span>1 </span>
+              <span>{props.starNum} </span>
               <BiGitRepoForked />
-              <span>1</span>
+              {props.forkNum}
             </div>
           </Card.Body>
         </Card>
       </div>
-    </div>
   );
 };
 export default GitHubReportCard;
