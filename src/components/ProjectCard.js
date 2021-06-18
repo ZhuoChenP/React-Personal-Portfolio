@@ -47,7 +47,7 @@ function ProjectCard() {
     <Container style={{ paddingTop: "30px" }}>
       <div className="row justify-content-center">
         <div className="col-sm-9">
-          <div className="w-responsive">
+          <div className="w-responsive p-3">
             <Row>
               <Col>
                 <h3 style={{ color: "#B8E0FE" }}>Project</h3>

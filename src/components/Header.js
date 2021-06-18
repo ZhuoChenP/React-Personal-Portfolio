@@ -1,7 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Nav, Navbar } from "react-bootstrap";
-import { GoMarkGithub, GoFile, GoMail } from "react-icons/go";
+import { GoMarkGithub, GoFile } from "react-icons/go";
+import { HiMail } from "react-icons/hi";
 
 function Header() {
   return (
@@ -10,13 +11,13 @@ function Header() {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="#github">
-            <GoMarkGithub />
+            <GoMarkGithub size="28px" />
           </Nav.Link>
           <Nav.Link href="#resume">
-            <GoFile />
+            <GoFile size="28px" />
           </Nav.Link>
           <Nav.Link href="#mail">
-            <GoMail />
+            <HiMail size="28px" />
           </Nav.Link>
         </Nav>
         <Nav>

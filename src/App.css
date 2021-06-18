@@ -34,3 +34,6 @@
     display: flex;
     
 }
+
+.footerIcon{display: inline-block; padding: 0px 12px}
+.footerStyle{color:#9A9DA0;text-align: center}

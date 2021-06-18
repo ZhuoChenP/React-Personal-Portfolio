@@ -3,6 +3,9 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Project from "./components/Experience";
 import ProjectCard from "./components/ProjectCard";
+import Skills  from "./components/Skills";
+import EduAndCert from "./components/EduAndCert";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <AboutMe />
       <Project />
       <ProjectCard />
+      <Skills />
+      <EduAndCert />
+      <Footer />
     </div>
   );
 }

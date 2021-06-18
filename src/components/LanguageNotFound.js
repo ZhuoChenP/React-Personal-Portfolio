@@ -7,7 +7,6 @@ export const LanguageNotFound = () => {
         style={{
           textAlign: "center",
           color: "#B8E0FE",
-          paddingBottom: "45px",
           paddingTop: "45px",
         }}
       >
