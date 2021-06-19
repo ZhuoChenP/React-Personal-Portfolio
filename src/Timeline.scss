@@ -46,7 +46,7 @@ p {
         content: '';
         position: absolute;
         left: 0;
-        top: 0;
+        top: .8rem;
         width: 4px;
         height: 100%;
         background: $timeline-body-bg;
@@ -58,20 +58,20 @@ p {
 
         .timeline-icon {
             position: absolute;
-            left: -88px;
+            left: -81px;
             top: 4px;
-            width: 50px;
-            height: 50px;
+            width: 38px;
+            height: 38px;
+            border: 2px solid white;
             border-radius: 50%;
             text-align: center;
-            font-size: 2rem;
-            background: $secondary;
-
+            font-size: 25px;
             i {
                 position: absolute;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
+                padding-Bottom: .6rem; 
             }
 
             img {
@@ -148,7 +148,7 @@ p {
         &.warning {
             .badge,
             .timeline-icon {
-                background: $warning !important;
+             
             }
         }
 

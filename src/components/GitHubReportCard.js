@@ -16,7 +16,7 @@ export const GitHubReportCard = (props) => {
           <Card.Body>
             <Card.Title>
               <RiGitRepositoryFill />
-              <a href={props.url} style={{ color: "dark" }}>
+              <a href={props.url} style={{ color: "white" }}>
                 {props.name}
               </a>
             </Card.Title>

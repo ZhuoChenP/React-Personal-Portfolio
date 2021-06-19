@@ -17,11 +17,11 @@ function AboutMe() {
                   About Me
                 </h3>
                 <p className="font AboutMeContentColor">
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                  scelerisque ante sollicitudin commodo. Cras purus odio,
-                  vestibulum in vulputate at, tempus viverra turpis. Fusce
-                  condimentum nunc ac nisi vulputate fringilla. Donec lacinia
-                  congue felis in faucibus.
+                  My name is Zhuo Chen, a fourth-year student of Bachelor of applied science
+                  degree in Software Systems Engineering at the University of
+                  Regina. I believe in collaboration, and I enjoy discussion on
+                  both the technical aspect and usability aspect of software
+                  development, validation and deployment.
                 </p>
               </Media.Body>
               <img
