@@ -1,21 +1,22 @@
 import React from "react";
-import {  Media } from "react-bootstrap";
+import { Media, Image } from "react-bootstrap";
 import "../Timeline.scss";
+import "../App.css"
 
 export const EduCertDetail = (props) => {
   return (
     <Media>
-      <img
+      <Image
         width={64}
         height={64}
         className="mr-3"
-        src="holder.js/64x64"
-        alt=""
+        src={process.env.PUBLIC_URL + props.img}
+        alt={props.img}
         roundedCircle
       />
       <Media.Body>
-        <h5 style={{ color: "white" }}>{props.title}</h5>
-        <p style={{ color: "white" }}>{props.date}</p>
+        <h5 className="titleColor">{props.title}</h5>
+        <p className="restParts">{props.date}</p>
       </Media.Body>
     </Media>
   );

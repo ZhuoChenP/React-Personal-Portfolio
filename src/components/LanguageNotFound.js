@@ -6,7 +6,7 @@ export const LanguageNotFound = () => {
         className="col"
         style={{
           textAlign: "center",
-          color: "#B8E0FE",
+          color: "#add7ff",
           paddingTop: "45px",
         }}
       >

@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Container } from "react-bootstrap";
+import { Col, Row, Container, Nav } from "react-bootstrap";
 import { GoMarkGithub, GoMail } from "react-icons/go";
 import { IconContext } from "react-icons";
 import { ImLinkedin } from "react-icons/im";
@@ -26,16 +26,39 @@ export const Footer = () => {
             >
               <ul>
                 <li className="footerIcon">
-                  <GoMarkGithub />
+                  <a
+                    href="https://github.com/ZhuoChenP"
+                    target="_black"
+                    className="footIcon"
+                  >
+                    <GoMarkGithub />
+                  </a>
                 </li>
                 <li className="footerIcon">
-                  <HiMail />
+                  <a
+                    href="mailto:chen1994zhuo@gmail.com"
+                    className="footIcon"
+                  >
+                    <HiMail />
+                  </a>
                 </li>
                 <li className="footerIcon">
-                  <ImLinkedin />
+                  <a
+                    href="https://www.linkedin.com/in/zhuo-chen-0aa190a1/"
+                    target="_black"
+                    className="footIcon"
+                  >
+                    <ImLinkedin />
+                  </a>
                 </li>
                 <li className="footerIcon">
-                  <SiLeetcode />
+                  <a
+                    href="https://leetcode.com/chen1994zhuo/"
+                    target="_black"
+                    className="footIcon"
+                  >
+                    <SiLeetcode />
+                  </a>
                 </li>
               </ul>
             </IconContext.Provider>

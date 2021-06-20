@@ -1,6 +1,11 @@
 
-.AboutMeContentColor{  color:#b4d2ff;}
+.contentColor{  color:#b4d2ff;}
 .font{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.fontProject{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
@@ -12,15 +17,21 @@
   transform: rotate(15deg);
 }
 
+.footIcon{color:#9A9DA0}
+.footIcon:hover{
+color:#b9b8b8
+}
 #Cardbottom{
   color: red;
 }
+.titleColor{color:#e4f0fbe3;}
+.titlePosition{padding-bottom: 45px;}
 
 .cardCustomize{
     margin: 1rem;
     border-radius: .6rem;
     border: 3px solid;
-    border-color: #9A9DA0;
+    border-color: #5d98b8;
     display: flex;
     flex-direction: column;
     row-gap: .5rem;
@@ -36,3 +47,4 @@
 
 .footerIcon{display: inline-block; padding: 0px 12px}
 .footerStyle{color:#9A9DA0;text-align: center}
+.restParts{color: #e4f0fbe3;}

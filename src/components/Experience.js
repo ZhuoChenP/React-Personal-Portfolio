@@ -20,7 +20,8 @@ function Experience() {
         "Develop technical drawings for design development and estimating",
         "Verify the manufactured furniture",
       ],
-      icon: <FaDraftingCompass size="20px"/>,
+      icon: <FaDraftingCompass size="20px" />,
+      className: "internship",
     },
     {
       job_type: "Part Time",
@@ -33,27 +34,22 @@ function Experience() {
         "Develop technical drawings for design development and estimating",
         "Performe various tasks",
       ],
-      icon: <RiShoppingCartFill size="20px"/>,
+      icon: <RiShoppingCartFill size="20px" />,
+      className: "partTime",
     },
   ];
 
   return (
-    <Container style={{ paddingTop: "30px" }}>
+    <Container style={{ paddingTop: "30px" }} id="Experience">
       <div className="row justify-content-center">
         <div className="col-sm-9">
           <div className="w-responsive  p-3">
-            <h3 style={{ color: "#B8E0FE", paddingBottom: "45px" }}>
-              Experience
-            </h3>
+            <h3 className="titleColor     titlePosition">Experience</h3>
             <div className="container">
               <div className="timeline">
-                {
-                  experienceList.map((exp,index)=>{
-                    return(
-                    <ExperienceDetail exp={exp} index={index}/>
-                    )
-                    })
-                }
+                {experienceList.map((exp, index) => {
+                  return <ExperienceDetail exp={exp} index={index} />;
+                })}
               </div>
             </div>
           </div>

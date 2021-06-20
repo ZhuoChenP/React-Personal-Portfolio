@@ -9,12 +9,11 @@
 }
 
 // colors
-$primary: #1d8cf8;
+
 $secondary: #4f537b;
-$info: #11cdef;
-$success: #00bf9a;
-$warning: #ff8d72;
-$danger: #fd5d93;
+
+$internship: #df4576;
+$partTime: #bb86fc;
 
 // timeline variables
 $body-bg: #1e1e2f;
@@ -62,7 +61,7 @@ p {
             top: 4px;
             width: 38px;
             height: 38px;
-            border: 2px solid white;
+            
             border-radius: 50%;
             text-align: center;
             font-size: 25px;
@@ -103,7 +102,7 @@ p {
                 margin-bottom: 1.4rem;
 
                 .badge {
-                    background: $secondary;
+                
                     padding: 4px 8px;
                     border-radius: 3px;
                     font-size: 12px;
@@ -120,43 +119,23 @@ p {
             }
         }
 
-        // Primary Timeline
-        &.primary {
-            .badge,
-            .timeline-icon {
-                background: $primary !important;
-            }
-        }
-
-        // Info Timeline
-        &.info {
-            .badge,
-            .timeline-icon {
-                background: $info !important;
-            }
-        }
-
-        // Success Timeline
-        &.success {
-            .badge,
-            .timeline-icon {
-                background: $success !important;
-            }
-        }
-
         // Warning Timeline
-        &.warning {
-            .badge,
-            .timeline-icon {
-             
+        &.internship {
+            .badge{
+                background:$internship;
+            }
+            .timeline-icon {   
+                border: 2px solid $internship;
             }
         }
 
         // Dnager Timeline
-        &.danger {
-            .badge,
+        &.partTime {
+            .badge{
+                background:$partTime;
+            }
             .timeline-icon {
-                background: $danger !important;
+                border: 2px solid $partTime;
             }
         }
 

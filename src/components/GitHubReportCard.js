@@ -11,29 +11,30 @@ export const GitHubReportCard = (props) => {
   else debug = props.language;
   return (
     <div className="col-sm-6">
-
-        <Card style={{ width: "23rem" }} className="cardCustomize">
-          <Card.Body>
-            <Card.Title>
-              <RiGitRepositoryFill />
-              <a href={props.url} style={{ color: "white" }}>
-                {props.name}
-              </a>
-            </Card.Title>
-            <Card.Text className="font">{props.description}</Card.Text>
-            <div>
-              <RiCheckboxBlankCircleFill
-                style={{ color: LanguageColors[debug.toLowerCase()] }}
-              />
-              <span>{debug} </span>
-              <BiStar />
-              <span>{props.starNum} </span>
-              <BiGitRepoForked />
-              {props.forkNum}
-            </div>
-          </Card.Body>
-        </Card>
-      </div>
+      <Card style={{ width: "23rem" }} className="cardCustomize">
+        <Card.Body>
+          <Card.Title>
+            <RiGitRepositoryFill />
+            <a href={props.url} className="titleColor">
+              {props.name}
+            </a>
+          </Card.Title>
+          <Card.Text className="fontProject contentColor">
+            {props.description}
+          </Card.Text>
+          <div className="restParts">
+            <RiCheckboxBlankCircleFill
+              style={{ color: LanguageColors[debug.toLowerCase()] }}
+            />
+            <span>{debug} </span>
+            <BiStar />
+            <span>{props.starNum} </span>
+            <BiGitRepoForked />
+            {props.forkNum}
+          </div>
+        </Card.Body>
+      </Card>
+    </div>
   );
 };
 export default GitHubReportCard;

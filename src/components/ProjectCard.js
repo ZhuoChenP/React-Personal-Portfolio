@@ -44,13 +44,13 @@ function ProjectCard() {
   }
 
   return (
-    <Container style={{ paddingTop: "30px" }}>
+    <Container style={{ paddingTop: "30px" }} id="ProjectCard">
       <div className="row justify-content-center">
         <div className="col-sm-9">
           <div className="w-responsive p-3">
             <Row>
               <Col>
-                <h3 style={{ color: "#B8E0FE" }}>Project</h3>
+                <h3 className="titleColor titlePosition">Project</h3>
               </Col>
               <Col>
                 <span className="searchBar">
