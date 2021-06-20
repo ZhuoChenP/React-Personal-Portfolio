@@ -18,7 +18,7 @@ export const ExperienceDetail = (props) => {
             {props.exp.job_title}
           </span>
         </h4>
-        <ul style={{ paddingLeft: "1rem" }} className="contentColor font">
+        <ul style={{ paddingLeft: "1rem" }} className="contentColor">
           {props.exp.job_duties.map((job_duty, index) => {
             return <li key={index}>{job_duty}</li>;
           })}
