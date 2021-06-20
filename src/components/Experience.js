@@ -5,8 +5,6 @@ import ExperienceDetail from "./ExperienceDetail";
 import { FaDraftingCompass } from "react-icons/fa";
 import { RiShoppingCartFill } from "react-icons/ri";
 
-
-
 function Experience() {
   var experienceList = [
     {
@@ -31,7 +29,7 @@ function Experience() {
       job_duties: [
         "Package a variety of vegetables and fruits",
         "Load and unload the products",
-        "Develop technical drawings for design development and estimating",
+        "Perform cleanup tasks at job site",
         "Performe various tasks",
       ],
       icon: <RiShoppingCartFill size="20px" />,
