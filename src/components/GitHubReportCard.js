@@ -15,7 +15,7 @@ export const GitHubReportCard = (props) => {
         <Card.Body>
           <Card.Title>
             <RiGitRepositoryFill />
-            <a href={props.url} className="titleColor">
+            <a href={props.url} className="linkColor" target="_black">
               {props.name}
             </a>
           </Card.Title>
