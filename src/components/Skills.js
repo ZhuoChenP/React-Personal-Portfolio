@@ -1,7 +1,16 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { Canvas } from "@react-three/fiber";
 
 export const Skills = () => {
+  function Box() {
+    return (
+      <mesh>
+        <boxBufferGeometry attach="geometry" />
+        <meshLambertMaterial attach="material" color="hotpink" />
+      </mesh>
+    );
+  }
   return (
     <Container style={{ paddingTop: "30px" }} id="Skills">
       <div className="row justify-content-center">
@@ -14,6 +23,7 @@ export const Skills = () => {
               Skills
             </h3>
           </div>
+ 
         </div>
       </div>
     </Container>

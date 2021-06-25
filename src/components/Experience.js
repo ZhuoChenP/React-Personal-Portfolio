@@ -11,7 +11,7 @@ function Experience() {
       job_type: "Internship",
       job_title: "Drafter Intern",
       Company_Name: "Reno Design Hongyi Inc",
-      date: "September 2016 - March 2018",
+      date: "January 2018 - February 2018",
       job_duties: [
         "Create 3D Model Designs based on Project Requirements",
         "Create blue print 2D drawings of designs after fabrication",
