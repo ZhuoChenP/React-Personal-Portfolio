@@ -4,9 +4,24 @@ import "../Timeline.scss";
 import ExperienceDetail from "./ExperienceDetail";
 import { FaDraftingCompass } from "react-icons/fa";
 import { RiShoppingCartFill } from "react-icons/ri";
+import {SiGoogleanalytics} from "react-icons/si";
 
 function Experience() {
   var experienceList = [
+    {
+      job_type: "Full Time",
+      job_title: "Junior Programmer Analyst",
+      Company_Name: "Saskatchewan Assessment Management Agency",
+      date: "September 2021 - May 2022",
+      job_duties: [
+        "Converting Crystal Reports to MS SSRS format",
+        "Updating and creating design documentation",
+        "Deploying Reports to different environments",
+        "Providing end user support",
+      ],
+      icon: <SiGoogleanalytics size="20px" />,
+      className: "fullTime",
+    },
     {
       job_type: "Internship",
       job_title: "Drafter Intern",
